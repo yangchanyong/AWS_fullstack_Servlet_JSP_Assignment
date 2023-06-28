@@ -18,14 +18,6 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -67,6 +59,7 @@
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Team</a></li>
     <li><a href="#license">Etc..</a></li>
+    <li><a href="Acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -75,7 +68,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<img src="image/1.png" >
 
 Servlet, JSP를 활용한 회원제 게시판
 
@@ -109,11 +102,16 @@ To get a local copy up and running follow these simple example steps.
    git clone https://github.com/yangchanyong/AWS_fullstack_Servlet_JSP_Assignment.git
    ```
 
-  데이터베이스 구성
-    <img src="image/ERD" >
+  데이터베이스 구성 <br>
+    <img src="image/ERD.png" width="500" >
+
+
     
-  데이터베이스 연결
+    
+  데이터베이스 연결 <br>
+  ```sh
     src/main/java/com/chanyongyang/jsp/util/DBConn.java 파일 열기 -> DB접속정보 입력
+  ```
 
 ### 설치
 
@@ -201,7 +199,7 @@ Portfolio Link: [Portfolio](https://chanyongyang.com)
 이 프로젝트를 사용해주시고 README를 읽어주신 여러분께 대단히 감사합니다!
 
 
-* [README-Template]([https://choosealicense.com](https://github.com/othneildrew/Best-README-Template))
+README Template : [README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
