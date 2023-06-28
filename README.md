@@ -187,7 +187,7 @@ Yang Chanyong - [@Email]- cksdyd93@gmail.com
 
 Demo Link: [@Demo](https://pf2.chanyongyang.com)
 
-Portfolio Link: [Portfolio](https://chanyongyang.com)
+Portfolio Link: [Portfolio](https://www.chanyongyang.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
