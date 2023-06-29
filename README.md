@@ -59,9 +59,9 @@
     <li><a href="#사용방법">사용방법</a></li>
     <li><a href="#요구사항">요구사항</a></li>
     <li><a href="#Team">Team</a></li>
-    <li><a href="#Etc..">Etc..</a></li>
+    <li><a href="#Etc">Etc..</a></li>
     <li><a href="#Contact">Contact</a></li>
-    <li><a href="Acknowledgments">Acknowledgments</a></li>
+    <li><a href="#Acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
 
@@ -175,7 +175,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 <!-- LICENSE -->
-## Etc..
+## Etc
   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
