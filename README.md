@@ -100,15 +100,15 @@ To get a local copy up and running follow these simple example steps.
 
 ### 사전준비
 
- 저장소 복제
+#### 저장소 복제
    ```sh
    git clone https://github.com/yangchanyong/AWS_fullstack_Servlet_JSP_Assignment.git
    ```
 
-  데이터베이스 구성 <br>
+ #### 데이터베이스 구성 <br>
     <img src="image/ERD2.png" width="500" >
 
-  데이터베이스 테이블 생성 쿼리
+ #### 데이터베이스 테이블 생성 쿼리
   
   <details>
     <summary>query</summary>  
@@ -162,7 +162,7 @@ To get a local copy up and running follow these simple example steps.
   </details>
     
     
-  데이터베이스 연결 <br>
+  #### 데이터베이스 연결 <br>
   ```sh
     src/main/java/com/chanyongyang/jsp/util/DBConn.java 파일 열기 -> DB접속정보 입력
   ```
@@ -242,9 +242,9 @@ To get a local copy up and running follow these simple example steps.
 
 Yang Chanyong - cksdyd93@gmail.com
 
-Demo Link: (https://pf2.chanyongyang.com){:target="_blank"}
+[Demo Link](https://pf2.chanyongyang.com){:target="_blank"}
 
-Portfolio Link: (https://www.chanyongyang.com){:target="_blank"}
+[Portfolio Link](https://www.chanyongyang.com){:target="_blank"}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
