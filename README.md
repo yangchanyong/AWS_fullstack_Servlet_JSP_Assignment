@@ -71,8 +71,9 @@
 
 <img src="image/1.png" >
 
-Servlet, JSP를 활용한 회원제 게시판
-이 프로젝트는 학원 정규 교육과정에 있었음
+<br>
+Servlet, JSP를 활용한 회원제 게시판 <br>
+이 프로젝트는 학원 정규 교육과정에 있었음 <br>
 앞전에 배운 JAVA, DB, HTML5, CSS3, JS, jQuery를 활용하여 회원제 게시판을 만드는것을 목적으로 함
 
 ### Built With
@@ -95,8 +96,7 @@ Servlet, JSP를 활용한 회원제 게시판
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+프로젝트를 복제하여 로컬에서 설정하는 방법에 대한 설명 입니다. <br>
 
 ### 사전준비
 
