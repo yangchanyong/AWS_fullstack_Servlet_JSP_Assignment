@@ -242,9 +242,9 @@ To get a local copy up and running follow these simple example steps.
 
 Yang Chanyong - cksdyd93@gmail.com
 
-[Demo Link](https://pf2.chanyongyang.com){:target="_blank"}
+<a href="https://pf2.chanyongyang.com" target="_blank">Demo Link</a>
 
-[Portfolio Link](https://www.chanyongyang.com){:target="_blank"}
+<a href="https://www.chanyongyang.com" target="_blank">Portfolio Link</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
