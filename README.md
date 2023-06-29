@@ -33,6 +33,7 @@
     <br />
     <br />
     <br />
+    <p>작업기간 : 1 week</p>
     <a href="https://pf2.chanyongyang.com/">View Demo</a>
   </p>
 </div>
@@ -143,6 +144,7 @@ To get a local copy up and running follow these simple example steps.
 <!-- ROADMAP -->
 ## 요구사항
 
+#### 작업완료
 - [x] 회원가입 
 - [x] 로그인
 - [x] 게시글
@@ -150,6 +152,8 @@ To get a local copy up and running follow these simple example steps.
     - [x] 수정
     - [x] 삭제
     - [x] 상세보기
+
+ #### 작업중
 - [ ] 댓글
     - [ ] 작성
     - [ ] 수정
