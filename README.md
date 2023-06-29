@@ -22,7 +22,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://pf2.chanyongyang.com/">
+  <a href="https://pf2.chanyongyang.com/" target="_blank">
     <img src="image/oring.png" alt="Logo" width="200">
   </a>
 
@@ -32,7 +32,7 @@
     회원제 게시판
     <br>
     <p>작업기간 : 1 week</p>
-    <a href="https://pf2.chanyongyang.com/">View Demo</a>
+    <a href="https://pf2.chanyongyang.com/ target="_blank"">View Demo</a>
   </p>
 </div>
 
@@ -72,14 +72,16 @@
 <img src="image/1.png" >
 
 Servlet, JSP를 활용한 회원제 게시판
+이 프로젝트는 학원 정규 교육과정에 있었음
+앞전에 배운 JAVA, DB, HTML5, CSS3, JS, jQuery를 활용하여 회원제 게시판을 만드는것을 목적으로 함
 
 ### Built With
 
  <img src="https://img.shields.io/badge/Java-white?style=flat&logo=java&logoColor=white"/><br>
+ <img src="https://img.shields.io/badge/Servlet-blue?style=flat&logo=Servlet&logoColor=white"/><br>
  <img src="https://img.shields.io/badge/jsp-white?style=flat&logo=jsp&logoColor=white"/><br>
  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat&logo=javascript&logoColor=black"/><br>
  <img src="https://img.shields.io/badge/jquery-0868AB?style=flat&logo=jquery&logoColor=white"/><br>
- <img src="https://img.shields.io/badge/Spring-68BD44?style=flat&logo=spring&logoColor=white"/><br>
  <img src="https://img.shields.io/badge/mariaDB-lightgray?style=flat&logo=mariadb&logoColor=white"/><br>
 
 
@@ -104,9 +106,60 @@ To get a local copy up and running follow these simple example steps.
    ```
 
   데이터베이스 구성 <br>
-    <img src="image/ERD.png" width="500" >
+    <img src="image/ERD2.png" width="500" >
 
-
+  데이터베이스 테이블 생성 쿼리
+  
+  <details>
+    <summary>query</summary>  
+    
+    CREATE TABLE `tbl_member` (
+      `id` varchar(750) NOT NULL,
+      `pw` varchar(1000) NOT NULL,
+      `name` varchar(1000) NOT NULL,
+      `regdate` datetime DEFAULT current_timestamp(),
+      `email` varchar(1000) DEFAULT NULL,
+      `addr` varchar(1000) DEFAULT NULL,
+      `addrDetail` varchar(1000) DEFAULT NULL,
+      PRIMARY KEY (`id`)
+    )
+    CREATE TABLE `tbl_board` (
+      `bno` bigint(20) NOT NULL AUTO_INCREMENT,
+      `title` varchar(3000) DEFAULT NULL,
+      `content` text DEFAULT NULL,
+      `writer` varchar(750) DEFAULT NULL,
+      `regdate` datetime DEFAULT current_timestamp(),
+      `updatedate` datetime DEFAULT current_timestamp(),
+      `hitcount` int(11) DEFAULT 0,
+      `category` int(11) DEFAULT 1,
+      PRIMARY KEY (`bno`),
+      KEY `writer` (`writer`),
+      CONSTRAINT `tbl_board_ibfk_1` FOREIGN KEY (`writer`) REFERENCES `tbl_member` (`id`)
+    )
+    CREATE TABLE `tbl_attach` (
+      `uuid` varchar(500) NOT NULL,
+      `origin` varchar(1000) DEFAULT NULL,
+      `image` char(1) DEFAULT NULL,
+      `path` varchar(300) DEFAULT NULL,
+      `bno` bigint(20) DEFAULT NULL,
+      PRIMARY KEY (`uuid`),
+      KEY `bno` (`bno`),
+      CONSTRAINT `tbl_attach_ibfk_1` FOREIGN KEY (`bno`) REFERENCES `tbl_board` (`bno`)
+    )
+    CREATE TABLE `tbl_reply` (
+      `rno` bigint(20) NOT NULL AUTO_INCREMENT,
+      `content` text DEFAULT NULL,
+      `regdate` datetime DEFAULT current_timestamp(),
+      `writer` varchar(750) DEFAULT NULL,
+      `bno` bigint(20) DEFAULT NULL,
+      PRIMARY KEY (`rno`),
+      KEY `writer` (`writer`),
+      KEY `bno` (`bno`),
+      CONSTRAINT `tbl_reply_ibfk_1` FOREIGN KEY (`writer`) REFERENCES `tbl_member` (`id`),
+      CONSTRAINT `tbl_reply_ibfk_2` FOREIGN KEY (`bno`) REFERENCES `tbl_board` (`bno`)
+    )
+    
+  </details>
     
     
   데이터베이스 연결 <br>
@@ -132,7 +185,7 @@ To get a local copy up and running follow these simple example steps.
 ## 사용방법
   1. 회원가입
   2. 로그인
-  3. 자유게시판 글 확인 및 작성
+  3. 자유게시판, 공지사항 글 확인 및 작성
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -169,7 +222,7 @@ To get a local copy up and running follow these simple example steps.
 
 
 <!-- CONTRIBUTING -->
-## Team
+## Collaborator
  Personal Project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -187,11 +240,11 @@ To get a local copy up and running follow these simple example steps.
 <!-- CONTACT -->
 ## Contact
 
-Yang Chanyong - [@Email]- cksdyd93@gmail.com
+Yang Chanyong - cksdyd93@gmail.com
 
-Demo Link: [@Demo](https://pf2.chanyongyang.com)
+Demo Link: (https://pf2.chanyongyang.com){:target="_blank"}
 
-Portfolio Link: [Portfolio](https://www.chanyongyang.com)
+Portfolio Link: (https://www.chanyongyang.com){:target="_blank"}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,8 +255,10 @@ Portfolio Link: [Portfolio](https://www.chanyongyang.com)
 
 이 프로젝트를 사용해주시고 README를 읽어주신 여러분께 대단히 감사합니다!
 
-
+### Reference
 README Template : [README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fyangchanyong%2FAWS_fullstack_Servlet_JSP_Assignment&count_bg=%23000000&title_bg=%23A4A2A2&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
