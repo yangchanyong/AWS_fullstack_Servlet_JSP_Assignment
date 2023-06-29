@@ -151,7 +151,7 @@ To get a local copy up and running follow these simple example steps.
     - [x] 삭제
     - [x] 상세보기
 
- #### 작업중
+ #### 작업예정
 - [ ] 댓글
     - [ ] 작성
     - [ ] 수정
