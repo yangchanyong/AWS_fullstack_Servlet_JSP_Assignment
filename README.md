@@ -52,13 +52,15 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Database Build</a></li>
+        <li><a href="#사전준비">사전준비</a></li>
+        <li><a href="#설치">설치</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Team</a></li>
-    <li><a href="#license">Etc..</a></li>
+    <li><a href="#사용방법">사용방법</a></li>
+    <li><a href="#요구사항">요구사항</a></li>
+    <li><a href="#Team">Team</a></li>
+    <li><a href="#Etc..">Etc..</a></li>
+    <li><a href="#Contact">Contact</a></li>
     <li><a href="Acknowledgments">Acknowledgments</a></li>
   </ol>
 </details>
