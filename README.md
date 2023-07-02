@@ -32,7 +32,7 @@
     회원제 게시판
     <br>
     <p>작업기간 : 1 week</p>
-    <a href="https://pf2.chanyongyang.com/ target="blank">View Demo</a>
+    <a href="https://pf2.chanyongyang.com/">View Demo</a>
   </p>
 </div>
 
