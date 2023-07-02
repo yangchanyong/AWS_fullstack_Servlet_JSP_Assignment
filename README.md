@@ -22,7 +22,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://pf2.chanyongyang.com/" target="_blank">
+  <a href="https://pf2.chanyongyang.com/">
     <img src="image/oring.png" alt="Logo" width="200">
   </a>
 
